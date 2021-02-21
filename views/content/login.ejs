@@ -1,0 +1,10 @@
+<form method="POST" id="RegLog">
+    <input type="text" name="username" placeholder="Zadejte vaši přezdívku" required>
+    <input type="password" name="password" placeholder="Zadejte vaše heslo" required>
+        <% errory.forEach(function(error){ %>
+            <div class="error"><%= error %></div>
+        <% }); %>
+    <input type="submit" value="Přihlásit se">
+</form>
+<h3>Ještě nemáš účet? <a href="./registrace">Registruj se</a></h3>
+<h3>Zapomněl jsi heslo? <a href="./zapomenute-heslo">Resetuj si heslo</a></h3>

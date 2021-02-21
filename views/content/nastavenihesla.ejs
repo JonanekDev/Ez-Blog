@@ -1,0 +1,8 @@
+<form method="POST" id="RegLog" action="../heslo-reset">
+    <input type="password" name="password" placeholder="Zadejte vaše nové heslo" required>
+    <input type="password" name="repassword" placeholder="Zadejte vaše nové heslo znovu" required>
+        <% errory.forEach(function(error){ %>
+            <div class="error"><%= error %></div>
+        <% }); %>
+    <input type="submit" value="Nastavit heslo">
+</form>
